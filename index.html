@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+
+    <link rel="stylesheet" href="styles/css/style.min.css">
+</head>
+<body id="top">
+    <header class="header page__header">
+        <div class="container">
+            <div class="logo header__logo">Сайт портфолио</div>
+            <nav class="navbar header__navbar">
+                <a onclick="scrollToElement('first-screen')" class="navbar__item">главная</a>
+                <a onclick="scrollToElement('services')" class="navbar__item">услуги</a>
+                <a onclick="scrollToElement('skills')" class="navbar__item">навыки</a>
+                <a onclick="scrollToElement('portfolio')" class="navbar__item">портфолио</a>
+            </nav>
+        </div>
+    </header>
+    <section id="first-screen" class="first-screen page__first-screen container">
+        <div class="first-screen__left">
+            <h1 class="title first-screen__title">Делаем сайты</h1>
+            <span class="subtitle first-screen__subtitle">быстро и качествено</span>
+            <p class="text first-screen__text">Хотите лендинг или многостраничник? Мы готовы сделать сайт 
+                уже сегодня. Наше портфолио говорит само за себя!</p>
+            <a onclick="scrollToElement('portfolio')" class="button first-screen__button">портфолио</a>
+        </div>
+        <div class="first-screen__right">
+            <img src="images/first-screen/1.png" class="first-screen__image">
+        </div>
+    </section>
+    <section id="services" class="services container">
+        <span class="subtitle">услуги</span>
+        <h2 class="title services__title">Мы предлагаем</h2>
+
+        <div class="services__list">
+            <div class="service services__item">
+                <img src="images/services/landing-image.png" class="service__img">
+                <h3 class="title service__title">Лендинг</h3>
+                <p class="text service__text">Лендинг — это отдельная страница, созданная 
+                    в маркетинговых или рекламных целях для 
+                    повышения конверсий.</p>
+                <a onclick="scrollToElement('portfolio')" class="button">портфолио</a>
+            </div>
+            <div class="service services__item">
+                <img src="images/services/multipage-image.png" class="service__img">
+                <h3 class="title service__title">Многостраничник</h3>
+                <p class="text service__text">Многостраничники — это большие сайты с множеством 
+                    разделов. На таком сайте можно разместить много 
+                    нужного контента, полезной информации.</p>
+                <a onclick="scrollToElement('portfolio')" class="button">портфолио</a>
+            </div>
+            <div class="">
+                <img src="images/services/right-image.svg" class="services__right-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills container">
+        <span class="subtitle">навыки</span>
+        <h2 class="title skills__title">Что мы умеем</h2>
+
+        <div class="skills__content">
+            <div class="skills__list">
+                <div class="skill skills__item">
+                    <span class="skill__name">html</span>
+                    <div class="skill__percent" data-per="90%">90%</div>
+                </div>
+                <div class="skill skills__item">
+                    <span class="skill__name">css</span>
+                    <div class="skill__percent" data-per="65%">65%</div>
+                </div>
+                <div class="skill skills__item">
+                    <span class="skill__name">js</span>
+                    <div class="skill__percent" data-per="45%">45%</div>
+                </div>
+                <div class="skill skills__item">
+                    <span class="skill__name">gulp</span>
+                    <div class="skill__percent" data-per="35%">35%</div>
+                </div>
+            </div>
+            <div class="skills__descriptions descriptions">
+                <div class="description description--active descriptions__item">
+                    <h3 class="title description__title">HTML</h3>
+                    <p class="text description__text">Каждая HTML-страница состоит из набора тегов (также называемых элементами), 
+                        которые вы можете назвать строительными блоками веб-страниц. 
+                        Они создают иерархию, которая структурирует контент по разделам, 
+                        параграфам, заголовкам и другим блокам контента.
+                        </з>
+                </div>
+                <div class="description descriptions__item">
+                    <h3 class="title description__title">CSS</h3>
+                    <p class="text description__text">Каждая HTML-страница состоит из набора тегов (также называемых элементами), 
+                        которые вы можете назвать строительными блоками веб-страниц. 
+                        Они создают иерархию, которая структурирует контент по разделам, 
+                        параграфам, заголовкам и другим блокам контента.
+                        </з>
+                </div>
+                <div class="description descriptions__item">
+                    <h3 class="title description__title">JS</h3>
+                    <p class="text description__text">Каждая HTML-страница состоит из набора тегов (также называемых элементами), 
+                        которые вы можете назвать строительными блоками веб-страниц. 
+                        Они создают иерархию, которая структурирует контент по разделам, 
+                        параграфам, заголовкам и другим блокам контента.
+                        </з>
+                </div>
+                <div class="description descriptions__item">
+                    <h3 class="title description__title">GULP</h3>
+                    <p class="text description__text">Каждая HTML-страница состоит из набора тегов (также называемых элементами), 
+                        которые вы можете назвать строительными блоками веб-страниц. 
+                        Они создают иерархию, которая структурирует контент по разделам, 
+                        параграфам, заголовкам и другим блокам контента.
+                        </з>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio container">
+        <span class="subtitle">портфолио</span>
+        <h2 class="title portfolio__title">Наши работы</h2>
+        <div class="portfolio__list">
+            <div class="portfolio__item">
+                <a href="#" class="button">перейти</a>
+            </div>
+            <div class="portfolio__item">
+                <a href="#" class="button">перейти</a>
+            </div>
+            <div class="portfolio__item">
+                <a href="#" class="button">перейти</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="logo header__logo">Сайт портфолио</div>
+            <span class="text">благодарим за посещение нашего сайта</span>
+            <a onclick="scrollToElement('top')" class="button button--up">наверх</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll(".skill__percent").forEach((item) => {
+            item.style.height = item.dataset.per;
+        });
+
+        let domSkills = document.querySelector(".skills__list").children;
+        let domDescriptions = document.querySelector(".skills__descriptions").children;
+        let skills = {
+            "html": [domSkills[0], domDescriptions[0]],
+            "css": [domSkills[1], domDescriptions[1]],
+            "js": [domSkills[2], domDescriptions[2]],
+            "gulp": [domSkills[3], domDescriptions[3]],
+        }
+
+        let selectedSkill = null, 
+            selectedDescription = null;
+        function activateSkillAndDescription(name) {
+            selectedSkill?.classList.remove("skill--active");
+            selectedDescription?.classList.remove("description--active");
+
+            skills[name][0].classList.add("skill--active");
+            skills[name][1].classList.add("description--active");
+
+            selectedSkill = skills[name][0];
+            selectedDescription = skills[name][1];
+        }
+
+        activateSkillAndDescription("html");
+
+        for (let itemName in skills) {
+            skills[itemName][0].onmouseenter = activateSkillAndDescription.bind(null, itemName);
+        }
+
+        function scrollToElement(elemID) {
+            elem = document.getElementById(elemID);
+            window.scrollTo({
+                top: elem.getBoundingClientRect().top,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

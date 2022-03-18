@@ -1,0 +1,100 @@
+.page {
+    &__header {
+        margin-top: 30px;
+    }
+}
+
+.navbar {
+    &__item {
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        font-size: .9rem;
+        position: relative;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            bottom: -10px;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+        }
+        &:hover {
+            &:before {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.first-screen {
+    display: flex;
+    &__left {
+        width: 60%;
+        padding-right: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        .text {
+            max-width: 450px;
+        }
+    }
+    &__right {
+        width: 40%;
+    }
+    &__image {
+        width: 100%;
+    }
+}
+
+.services {
+    &__title {
+        margin-bottom: 74px;
+    }
+    &__item {
+        min-width: 340px;
+        max-width: 340px;
+    }
+}
+
+
+.skills {
+    &__content {
+        display: flex;
+    }
+    h2.title {
+        margin-bottom: 55px;
+    }
+    h3.title {
+        margin-bottom: 17px;
+    }
+}
+.skill {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    &.skill--active .skill__percent {
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            $diameter: 130px;
+            width: $diameter;
+            height: $diameter;
+            opacity: 1;
+        }
+    }
+}

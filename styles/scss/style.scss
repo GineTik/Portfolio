@@ -1,0 +1,9 @@
+@import 'global/global';
+
+@media (min-width: 801px) {
+    @import 'desktop/desktop';
+}
+
+@media (max-width: 800px) {
+    @import 'mobile/mobile';
+}
