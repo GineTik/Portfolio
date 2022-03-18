@@ -13,6 +13,10 @@ $gray: #f3f3f3;
     padding: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 section {
     &:not(:last-child) {
         margin-bottom: 200px;
@@ -140,7 +144,6 @@ h2.title {
 }
 
 .services {
-    overflow-x: hidden;
     position: relative;
     &__list {
         display: flex;

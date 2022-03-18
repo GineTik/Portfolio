@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 section:not(:last-child) {
   margin-bottom: 200px;
 }
@@ -130,7 +134,6 @@ h2.title {
 }
 
 .services {
-  overflow-x: hidden;
   position: relative;
 }
 .services__list {
@@ -329,7 +332,6 @@ h2.title {
 @media (max-width: 800px) {
   html, body {
     font-size: 14px;
-    overflow-x: hidden;
   }
 
   section {
