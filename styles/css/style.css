@@ -12,7 +12,7 @@ html, body {
 }
 
 section:not(:last-child) {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 section > .title {
   margin-bottom: 50px;
