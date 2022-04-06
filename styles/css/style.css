@@ -244,6 +244,8 @@ h2.title {
   z-index: 0;
   filter: opacity(100%);
   transition: filter 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
@@ -445,13 +447,22 @@ h2.title {
     padding: 0 !important;
   }
 
+  .description .title {
+    margin-bottom: 10px;
+  }
+
   .portfolio__item {
     width: 100%;
     max-width: 100%;
     min-width: 0;
   }
   .portfolio__item .button {
-    opacity: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .portfolio__item .button:hover {
+    opacity: 0;
   }
 
   footer {

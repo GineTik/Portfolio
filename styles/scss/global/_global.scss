@@ -271,6 +271,7 @@ h2.title {
         z-index: 0;
         filter: opacity(100%);
         transition: filter 0.3s;
+        object-fit: cover;
     }
 }
 
